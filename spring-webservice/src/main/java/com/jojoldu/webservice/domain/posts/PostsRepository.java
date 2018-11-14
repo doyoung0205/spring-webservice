@@ -12,7 +12,6 @@ import java.util.stream.Stream;
  * Github : https://github.com/jojoldu
  */
 
-@Component
 public interface PostsRepository extends JpaRepository<Posts, Long>{
 
     @Query("SELECT p " +

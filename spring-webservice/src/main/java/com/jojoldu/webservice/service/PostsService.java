@@ -23,8 +23,6 @@ import java.util.stream.Collectors;
 /*@AllArgsConstructor*/
 public class PostsService {
 	
-	
-	@Autowired
     private PostsRepository postsRepository;
 
     @Transactional
