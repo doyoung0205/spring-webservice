@@ -19,7 +19,7 @@ import org.springframework.test.context.junit4.SpringRunner;
  */
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes= {PostsRepository.class})
+@SpringBootTest
 public class PostsRepositoryTest {
 
     @Autowired
