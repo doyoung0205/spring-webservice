@@ -18,11 +18,10 @@ import java.util.stream.Collectors;
  * Github : https://github.com/jojoldu
  */
 
-@AllArgsConstructor
 @Service
+@AllArgsConstructor
 public class PostsService {
 	
-	@Autowired
     private PostsRepository postsRepository;
 
     @Transactional

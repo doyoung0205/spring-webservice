@@ -18,7 +18,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 @AllArgsConstructor
 public class WebController {
 
-	@Autowired
     private PostsService postsService;
 
     @GetMapping("/")
