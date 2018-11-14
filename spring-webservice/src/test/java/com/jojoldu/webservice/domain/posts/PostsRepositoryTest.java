@@ -31,7 +31,7 @@ public class PostsRepositoryTest {
     }
 
     @Test
-    public void 게시글저장_불러오기() {
+    public void dusdfhk() {
         //given
         postsRepository.save(Posts.builder()
                 .title("테스트 게시글")
