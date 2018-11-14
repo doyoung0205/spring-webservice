@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
  * Github : https://github.com/jojoldu
  */
 
-@Component
+@Service
 /*@AllArgsConstructor*/
 public class PostsService {
 	

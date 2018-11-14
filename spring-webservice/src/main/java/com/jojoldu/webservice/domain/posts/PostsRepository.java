@@ -2,6 +2,7 @@ package com.jojoldu.webservice.domain.posts;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Component;
 
 import java.util.stream.Stream;
 
@@ -11,6 +12,7 @@ import java.util.stream.Stream;
  * Github : https://github.com/jojoldu
  */
 
+@Component
 public interface PostsRepository extends JpaRepository<Posts, Long>{
 
     @Query("SELECT p " +
