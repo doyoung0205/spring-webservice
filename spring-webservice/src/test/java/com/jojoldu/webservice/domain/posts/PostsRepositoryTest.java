@@ -1,19 +1,17 @@
 package com.jojoldu.webservice.domain.posts;
 
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
+
+import java.time.LocalDateTime;
+import java.util.List;
+
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.List;
-
-import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertTrue;
 
 /**
  * Created by jojoldu@gmail.com on 2017. 12. 23.
@@ -51,7 +49,7 @@ public class PostsRepositoryTest {
         assertThat(posts.getContent(), is("테스트 본문"));
     }
 
-    @Test
+/*    @Test
     public void BaseTimeEntity_등록 () {
         //given
         LocalDateTime now = LocalDateTime.now();
@@ -65,7 +63,7 @@ public class PostsRepositoryTest {
 
         //then
         Posts posts = postsList.get(0);
-/*        assertTrue(posts.getCreatedDate().isAfter(now));
-        assertTrue(posts.getModifiedDate().isAfter(now));*/
-    }
+        assertTrue(posts.getCreatedDate().isAfter(now));
+        assertTrue(posts.getModifiedDate().isAfter(now));
+    }*/
 }
