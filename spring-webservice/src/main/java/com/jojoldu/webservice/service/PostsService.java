@@ -4,6 +4,8 @@ import com.jojoldu.webservice.domain.posts.PostsRepository;
 import com.jojoldu.webservice.dto.posts.PostsMainResponseDto;
 import com.jojoldu.webservice.dto.posts.PostsSaveRequestDto;
 import lombok.AllArgsConstructor;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -19,6 +21,8 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 @Service
 public class PostsService {
+	
+	@Autowired
     private PostsRepository postsRepository;
 
     @Transactional
