@@ -3,7 +3,6 @@ package com.jojoldu.webservice.domain.posts;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
-import java.time.LocalDateTime;
 import java.util.List;
 
 import org.junit.After;
@@ -20,7 +19,7 @@ import org.springframework.test.context.junit4.SpringRunner;
  */
 
 @RunWith(SpringRunner.class)
-@SpringBootTest
+@SpringBootTest(classes= {PostsRepository.class})
 public class PostsRepositoryTest {
 
     @Autowired
