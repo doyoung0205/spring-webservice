@@ -2,6 +2,8 @@ package com.jojoldu.webservice.web;
 
 import com.jojoldu.webservice.service.PostsService;
 import lombok.AllArgsConstructor;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,6 +18,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @AllArgsConstructor
 public class WebController {
 
+	@Autowired
     private PostsService postsService;
 
     @GetMapping("/")
