@@ -1,12 +1,15 @@
 package com.jojoldu.webservice.web;
 
-import com.jojoldu.webservice.dto.posts.PostsSaveRequestDto;
-import com.jojoldu.webservice.service.PostsService;
-import lombok.AllArgsConstructor;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.jojoldu.webservice.dto.posts.PostsSaveRequestDto;
+import com.jojoldu.webservice.service.PostsService;
+
+import lombok.AllArgsConstructor;
 
 /**
  * Created by jojoldu@gmail.com on 2017. 12. 24.
