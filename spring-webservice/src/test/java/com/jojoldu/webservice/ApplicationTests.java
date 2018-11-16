@@ -8,7 +8,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @WebMvcTest
-public class SpringWebserviceApplicationTests {
+public class ApplicationTests {
 
 	@Test
 	public void contextLoads() {
